@@ -1,0 +1,10 @@
+{
+    "default":{
+        "paths":["features/*.feature"],
+        "require":["features/step-definitions/*.js","features/support/*.js"],
+        "timeout":30000,
+        "formatOptions":{
+            "snippetInterface":"async-await"
+        }
+    }
+}
