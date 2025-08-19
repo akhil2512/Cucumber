@@ -9,4 +9,3 @@ Feature: DemoBlaze application
     Examples:
     | username                      | password          |
     | pavanol                       | test@123          |
-

@@ -1,4 +1,5 @@
 {
+
     "default":{
         "paths":["features/*.feature"],
         "require":["features/step-definitions/*.js","features/support/*.js"],
@@ -7,4 +8,5 @@
             "snippetInterface":"async-await"
         }
     }
+    
 }

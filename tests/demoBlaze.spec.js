@@ -12,6 +12,5 @@ test('BasicEx', async ({page}) =>{
 
     await page.click('//button[@class="btn btn-primary" and @onclick="logIn()"]')
 
-
     await page.waitForTimeout(4000)
 })

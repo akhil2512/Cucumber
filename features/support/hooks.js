@@ -7,6 +7,8 @@ Before("@Regression", async function() {
     this.page = await context.newPage();
 })
 
+
+
 After("@Regression", async function () {
     await this.browser.close();    
 })

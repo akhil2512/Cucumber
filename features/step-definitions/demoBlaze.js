@@ -9,9 +9,7 @@ Given('I navigate to the DemoBlaze application', async function () {
 })
 
 When('I enter {string} and {string}', async function (string1, string2) {
-
     await this.page.locator('#loginusername').fill(string1)
-
     await this.page.locator('#loginpassword').fill(string2)
     
 })
@@ -21,10 +19,7 @@ When('I click on the DemoBlaze login button', async function () {
 })
 
 Then('I should be logged into the DemoBlaze application', async function () {
-
     await this.page.waitForTimeout(4000)
-    
     const welcomeIcon = await this.page.locator('#nameofuser')
-
     await expect(welcomeIcon).toBeVisible()
 })
