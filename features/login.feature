@@ -16,5 +16,5 @@ Feature: Ecommerce E2E Validation
     | username                      | password          | item            |
     | defototeci@mechanicspedia.com | Testing@123       | ZARA COAT 3     |
     | akhilreddy60602@gmail.com     | Akhil@2512        | ZARA COAT 3     |
-    | balavikash6@gmail.com         | Cognizant@123     | ZARA COAT 3     | 
+    | balavikash6@gmail.com         | Cognizant@123     | ZARA COAT 3     |
 

@@ -1,5 +1,6 @@
-import { Before, After} from "@cucumber/cucumber"
+import { Before, After, Status} from "@cucumber/cucumber"
 import { chromium } from "@playwright/test";
+
 
 Before("@Regression", async function() {
     this.browser = await chromium.launch({headless: false});
@@ -9,6 +10,10 @@ Before("@Regression", async function() {
 
 
 
-After("@Regression", async function () {
+After("@Regression", async function ({result}) {
+
+    if(result.status === Status.FAILED){
+        await this.page.screenshot({path:'screenshot.png', fullPage: true})
+    }
     await this.browser.close();    
 })
